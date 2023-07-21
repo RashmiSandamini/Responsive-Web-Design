@@ -10,18 +10,11 @@ ol li h3{
     font-size: 20px;
 }
 
-.content-area img{
-    justify-content: center;
-    height: 450px;
-    width: 100%;
-    border-radius: 1rem;
-    transition: transform 300ms;
+ul{
+    line-height:180%;
+    font-size: 18px;
 }
 
-.content-area img:hover{
-    transform: translateY(-15px);
-    cursor: pointer;
-}
 
 .header {
     display: flex;
@@ -29,6 +22,7 @@ ol li h3{
     align-items: center;
     background-color: #f0f0f0;
     padding: .5rem 8rem;
+    /*width: 100%;*/
 }
 
 .header img {
@@ -52,6 +46,8 @@ ol li h3{
     text-align: center;
     height: auto;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
     /*background-color: red;*/
 }
 
@@ -60,22 +56,111 @@ ol li h3{
     width: 80%;
     border-radius: 1rem;
 }
+/*.main-content-outer{*/
+/*    margin: 20px 250px;*/
+/*    justify-content: center;*/
+/*    display: flex;*/
+/*    max-width: 100%;*/
+/*}*/
+.content-area, .main-content-outer {
+    /*background-color: yellow;*/
+    margin: 0 250px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
 
-.content-area{
-    margin: 20px 250px;
 
+.content-area img{
+
+    height: 450px;
+    /*width: 80%;*/
+    width: 800px;
+    border-radius: 1rem;
+    transition: transform 300ms;
+}
+
+.content-area img:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+
+.other-anime-area{
+    margin: 0 250px;
+    display: flex;
+    /*justify-content: center;*/
+    /*background-color: green;*/
+    max-width: 100%;
+}
+
+
+.button {
+
+    background-color: #4d94ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+tr:hover {
+    background-color: #D6EAF8;
+}
+
+.toggle-visibility{
+    display: none;
+}
+
+.anime-recommendation-area{
+    padding: 2rem;
+    margin: 0 250px;
+    /*display: none;*/
+    /*display: flex;*/
+}
+
+
+.anime-sites-area{
+    /*padding: 2rem;*/
+    margin: 0 250px;
+}
+@media screen and (max-width: 900px) {
+    .content-area img{
+        height: 250px;
+        width: 500px;
+    }
 }
 
 @media screen and (max-width: 660px) {
     .header {
         padding: .5rem 5rem;
+
     }
 }
-
-
 
 @media screen and (max-width: 460px) {
     .header {
         padding: .5rem 3rem;
+
     }
 }
